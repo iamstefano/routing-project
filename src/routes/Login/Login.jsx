@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Users } from "../../helpers/mock";
+import { auth } from "../../helpers/auth";
 import styles from "./login.module.scss";
 
 const Login = () => {
@@ -16,11 +16,11 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      if (Users.username === username && Users.password === password) {
+      if (auth.username === username && auth.password === password) {
         navigate("/dashboard");
         localStorage.setItem("auth", true);
       }
-      throw new Error("User or password are wrong");
+      throw new Error("Users and/or password are wrong");
     } catch (error) {
       console.log(error);
     }
@@ -44,7 +44,7 @@ const Login = () => {
           placeholder="Password"
           required
         />
-        <input type="submit" value="Login" />
+        <input type="submit" value="Log in" />
       </form>
     </div>
   );
