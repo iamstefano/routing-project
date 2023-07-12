@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-/* import { Users } from "../helpers/mock"; */
 import styles from "./Dashboard.module.scss";
 
 export default function Dashboard() {
