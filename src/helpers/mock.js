@@ -58,3 +58,22 @@ export const Mock = [
     featured: false,
   },
 ];
+
+export const Users = [
+  {
+    username: "stefano",
+    password: "stefano",
+    name: "Test1",
+    email: "test1@gmail.com",
+  },
+  {
+    username: "username",
+    password: "password",
+    name: "Test2",
+    email: "test2@gmail.com",
+  },
+];
+
+/* export const STORAGE_KEYS = {
+  USER: "router_prj_user",
+}; */

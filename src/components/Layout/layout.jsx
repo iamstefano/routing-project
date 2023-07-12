@@ -22,7 +22,10 @@ const Layout = () => {
             </li>
           </ul>
         </nav>
-        <h3>{"i"}</h3>
+        <h3>
+          <Link to="/login">{"👤Login"}</Link>
+          <Link to="/dashboard">{"||Dashboard"}</Link>
+        </h3>
       </header>
       <section className={styles["Layout-content"]}>
         <Outlet />

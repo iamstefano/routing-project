@@ -7,6 +7,7 @@ import About from "../routes/About/about";
 import Root from "../routes/Root/root";
 import Location from "../routes/Locations/components/Location/location";
 import Contacts from "../routes/Contacts/contacts";
+import Login from "../routes/Login";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
             element: <Locations />,
           },
           { path: "locations/:locationId", element: <Location /> },
+          { path: "login", element: <Login /> },
         ],
       },
     ],
