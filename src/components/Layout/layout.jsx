@@ -23,8 +23,8 @@ const Layout = () => {
           </ul>
         </nav>
         <h3>
-          <Link to="/login">{"👤Login"}</Link>
-          <Link to="/dashboard">{"||Dashboard"}</Link>
+          <Link to="/login">{"👤Login "}</Link>
+          <Link to="/dashboard">{"|| Dashboard"}</Link>
         </h3>
       </header>
       <section className={styles["Layout-content"]}>
